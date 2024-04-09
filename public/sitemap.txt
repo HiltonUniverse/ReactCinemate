@@ -1,0 +1,4 @@
+https://hiltoncinemate.netlify.app/
+https://hiltoncinemate.netlify.app/movies/popular
+https://hiltoncinemate.netlify.app/movies/top
+https://hiltoncinemate.netlify.app/movies/upcoming
