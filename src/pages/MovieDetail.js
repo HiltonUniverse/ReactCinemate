@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import Backup from "../assets/images/backup.png"
 import { useEffect, useState } from "react";
 import { useDocumentTitle } from "../hooks";
+import { Helmet } from 'react-helmet-async'
 
 export const MovieDetail = () => {
   const params = useParams()
@@ -25,6 +26,12 @@ export const MovieDetail = () => {
 
   return (
     <main>
+        <Helmet>
+          <title>Movie Details</title>
+          <meta name="description" content="Detailed description of a selected movie with it's budget and ratings."/>
+          <link rel="canonical"/>
+        </Helmet>
+        
         <section className="flex justify-around flex-wrap py-5">
           <div className="max-w-lg">
             <img className="rounded" src={image} alt={movie.title} />
