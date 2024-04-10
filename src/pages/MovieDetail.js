@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import Backup from "../assets/images/backup.png"
 import { useEffect, useState } from "react";
-import { useDocumentTitle } from "../hooks";
+// import { useDocumentTitle } from "../hooks";
 import { Helmet } from 'react-helmet-async'
 
 export const MovieDetail = () => {
@@ -22,12 +22,12 @@ export const MovieDetail = () => {
 
   const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup
 
-  useDocumentTitle(movie.title)
+  // useDocumentTitle(movie.title)
 
   return (
     <main>
         <Helmet>
-          <title>Movie Details</title>
+          <title>{movie.title}</title>
           <meta name="description" content="Detailed description of a selected movie with it's budget and ratings."/>
           <link rel="canonical"/>
         </Helmet>

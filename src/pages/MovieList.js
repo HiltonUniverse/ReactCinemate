@@ -1,11 +1,11 @@
 import {Card} from "../components/"
-import { useDocumentTitle, useFetch } from "../hooks/"
+import { useFetch } from "../hooks/"
 import { Helmet } from 'react-helmet-async'
 
 export const MovieList = ({apiPath, title, metaDescription, canonical}) => {
 
   const {data: movies} = useFetch(apiPath)
-  useDocumentTitle(title)
+  //useDocumentTitle(title)
   
   return (
     <main>
